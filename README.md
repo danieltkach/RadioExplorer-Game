@@ -33,7 +33,7 @@ A space exploration game featuring realistic radio astronomy mechanics.
 
 ### Changelog
 
-#### v0.0.1 (2024-11-15)
+#### v0.0.1 (2025-11-15)
 - Initial public release
 - Launch sequence with system checks
 - Landing sequence with alignment mini-game
