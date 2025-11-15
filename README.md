@@ -4,7 +4,7 @@ A space exploration game featuring realistic radio astronomy mechanics.
 
 ## 🎮 Play the Game
 
-**[► Download and Play Now!](https://YOUR-USERNAME.github.io/RadioExplorer-Game/)**
+**[► Download and Play Now!](https://danieltkach.github.io/RadioExplorer-Game/)**
 
 ## 📥 Installation
 
