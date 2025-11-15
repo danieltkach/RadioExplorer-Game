@@ -1,41 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radio Explorer - Download</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: 'Courier New', monospace;
-            background: #000;
-            color: #0f0;
-            padding: 50px;
+            background: linear-gradient(to bottom, #000428, #004e92);
+            color: #0ff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
             text-align: center;
         }
+        
+        h1 {
+            font-size: 48px;
+            margin: 40px 0 20px;
+            text-shadow: 0 0 20px #0ff;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
+            to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff; }
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+        
         .download-btn {
-            background: #0f0;
+            background: #0ff;
             color: #000;
-            padding: 20px 40px;
+            padding: 20px 60px;
             font-size: 24px;
+            font-weight: bold;
             text-decoration: none;
-            border: 2px solid #0f0;
+            border: 3px solid #0ff;
             display: inline-block;
             margin: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
         }
+        
         .download-btn:hover {
             background: #000;
-            color: #0f0;
+            color: #0ff;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+            transform: scale(1.05);
+        }
+        
+        .version {
+            margin: 30px 0;
+            font-size: 14px;
+            color: #aaa;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 40px auto;
+            max-width: 600px;
+            background: rgba(0, 20, 40, 0.8);
+            padding: 30px;
+            border: 1px solid #0ff;
+            border-radius: 10px;
+        }
+        
+        .features h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0ff;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+        }
+        
+        .features li:before {
+            content: "▶ ";
+            color: #0ff;
+            margin-right: 10px;
+        }
+        
+        .requirements {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 100, 0, 0.1);
+            border: 1px solid #f80;
+            border-radius: 5px;
+        }
+        
+        .requirements h3 {
+            color: #f80;
+            margin-bottom: 10px;
+        }
+        
+        .note {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(255, 255, 0, 0.1);
+            border: 1px solid #ff0;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #ff0;
+        }
+        
+        footer {
+            margin-top: 60px;
+            color: #666;
+            font-size: 12px;
+        }
+        
+        a.github-link {
+            color: #0ff;
+            text-decoration: none;
+        }
+        
+        a.github-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>🚀 RADIO EXPLORER 🚀</h1>
-    <p>A space exploration game with realistic radio astronomy</p>
-    
-    <a href="setup.exe" class="download-btn">DOWNLOAD GAME</a>
-    
-    <h2>System Requirements</h2>
-    <p>Windows 10/11 (64-bit)</p>
-    <p>.NET 8 Runtime (auto-installs)</p>
-    
-    <h2>Current Version: 1.0.0</h2>
+    <div class="container">
+        <h1>🚀 RADIO EXPLORER 🚀</h1>
+        <p class="subtitle">Navigate the cosmos. Master the landing. Explore the unknown.</p>
+        
+        <a href="setup.exe" class="download-btn">⬇ DOWNLOAD GAME</a>
+        
+        <p class="version">Current Version: 0.0.1 | Size: ~2MB | Auto-updates enabled</p>
+        
+        <div class="features">
+            <h2>✨ Features</h2>
+            <ul>
+                <li>Realistic launch sequence with system checks</li>
+                <li>Challenging manual landing alignment</li>
+                <li>Physics-based flight controls with drift</li>
+                <li>Procedural audio for space atmosphere</li>
+                <li>Multiple space stations to explore</li>
+                <li>Sound effects for all game events</li>
+            </ul>
+        </div>
+        
+        <div class="requirements">
+            <h3>💻 System Requirements</h3>
+            <p><strong>OS:</strong> Windows 10/11 (64-bit)</p>
+            <p><strong>Runtime:</strong> .NET 9 Desktop Runtime (installs automatically)</p>
+            <p>Send me a message if you'd like to play it on MacOS!</p>
+        </div>
+        
+        <div class="note">
+            ⚠️ <strong>First Launch:</strong> Windows Defender may show a warning because the app isn't signed. 
+            Click "More info" then "Run anyway" to install.
+        </div>
+        
+        <footer>
+            <p>Built with C# and NAudio</p>
+            <p><a href="https://github.com/YOUR-USERNAME/RadioExplorer-Game" class="github-link">View on GitHub</a></p>
+        </footer>
+    </div>
 </body>
 </html>
