@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\Users\\DanielTkach\\OneDrive\\Stellar Sail\\RadioExplorer Publish\\screenshots\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
