@@ -13,6 +13,16 @@ A space exploration game featuring realistic radio astronomy mechanics.
 3. The game will install and create a desktop shortcut
 4. Future updates install automatically!
 
+## ⚠️ Installation Note
+
+Windows will show a security warning because the app isn't signed 
+(signing costs $400/year and this is a free game!).
+
+**To install:**
+1. Click "More info"
+2. Click "Run anyway"
+3. This is safe - it's just because I'm an independent developer
+
 ## 🎯 Features
 
 - Realistic launch and landing sequences
