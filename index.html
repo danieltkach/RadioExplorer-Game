@@ -143,6 +143,73 @@
             text-decoration: underline;
         }
 
+        .support {
+            margin: 40px auto;
+            padding: 30px;
+            max-width: 600px;
+            background: rgba(0, 255, 100, 0.1);
+            border: 2px solid #0f8;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .support h2 {
+            color: #0f8;
+            margin-bottom: 15px;
+            text-shadow: 0 0 15px #0f8;
+        }
+
+        .support p {
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .support-btn {
+            background: #0f8;
+            color: #000;
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 3px solid #0f8;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+            border-radius: 5px;
+        }
+
+        .support-btn:hover {
+            background: #000;
+            color: #0f8;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.8);
+            transform: scale(1.05);
+        }
+
+        .support ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .support li {
+            padding: 8px 0;
+            color: #0f8;
+            font-size: 14px;
+        }
+
+        .support li:before {
+            content: "✓ ";
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
         .screenshots {
             margin: 60px auto 40px;
             max-width: 900px;
@@ -308,9 +375,24 @@
                 </div>
             </div>
 
+            <div class="support">
+                <h2>☕ Support Development</h2>
+                <p>Enjoying Radio Explorer? Your support helps keep this game free and enables future development!</p>
+
+                <a href="http://buymeacoffee.com/codewitcher" target="_blank" class="support-btn">☕ Buy Me a Coffee</a>
+
+                <p style="margin-top: 20px; font-size: 14px;">Your contributions help me:</p>
+                <ul>
+                    <li>Keep the game free for everyone</li>
+                    <li>Add new features and space stations</li>
+                    <li>Afford code signing ($400/year)</li>
+                    <li>Work on the graphical (pixel-art) version</li>
+                </ul>
+            </div>
+
             <footer>
                 <p>Built with C# and NAudio</p>
-                <p><a href="https://github.com/YOUR-USERNAME/RadioExplorer-Game"
+                <p><a href="https://github.com/danieltkach/RadioExplorer-Game"
                         class="github-link">View on GitHub</a></p>
             </footer>
         </div>

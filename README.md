@@ -21,7 +21,9 @@ Windows will show a security warning because the app isn't signed
 **To install:**
 1. Click "More info"
 2. Click "Run anyway"
-3. This is safe - it's just because I'm an independent developer
+
+###NOTE:
+This is safe - it's just because I'm an independent developer. If the game becomes successful I'll be able to afford the signing that costs $400/year. Please consider donating!
 
 ## 🎯 Features
 
@@ -79,6 +81,18 @@ Windows will show a security warning because the app isn't signed
 - `J/L/I/K` - Position alignment
 - `U/O` - Height adjustment
 - `ENTER` - Request clearance
+
+## ☕ Support Development
+
+Enjoying Radio Explorer? Consider supporting future development!
+
+**[Buy Me a Coffee](http://buymeacoffee.com/codewitcher)**
+
+Your support helps me:
+- Keep the game free for everyone
+- Add new features and stations
+- Afford code signing certificates ($400/year) to remove Windows warnings
+- Work on the graphical (pixel-art) version
 
 ## 📧 Contact
 
