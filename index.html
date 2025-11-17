@@ -16,33 +16,71 @@
             background: linear-gradient(to bottom, #000428, #004e92);
             color: #0ff;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
         }
-        
+
+        .header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
         .container {
             max-width: 800px;
             text-align: center;
+            margin: 0 auto;
+            padding: 20px;
         }
-        
+
         h1 {
-            font-size: 48px;
-            margin: 40px 0 20px;
+            font-size: 56px;
+            margin: 0 0 20px;
             text-shadow: 0 0 20px #0ff;
             animation: glow 2s ease-in-out infinite alternate;
+            color: #0ff;
         }
-        
+
         @keyframes glow {
             from { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
             to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff; }
         }
-        
+
         .subtitle {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 40px;
             color: #fff;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            border: 3px solid #0ff;
+            border-radius: 10px;
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.6), 0 0 80px rgba(0, 255, 255, 0.3);
+            display: block;
+            transition: all 0.3s;
+        }
+
+        .featured-image img:hover {
+            box-shadow: 0 0 60px rgba(0, 255, 255, 0.8), 0 0 100px rgba(0, 255, 255, 0.4);
+            transform: scale(1.01);
+        }
+
+        .featured-label {
+            text-align: center;
+            color: #0ff;
+            font-size: 14px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #0ff;
         }
         
         .download-btn {
@@ -58,15 +96,16 @@
             transition: all 0.3s;
             cursor: pointer;
             box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            border-radius: 5px;
         }
-        
+
         .download-btn:hover {
             background: #000;
             color: #0ff;
             box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
             transform: scale(1.05);
         }
-        
+
         .version {
             margin: 30px 0;
             font-size: 14px;
@@ -313,16 +352,21 @@
     </style>
     </head>
     <body>
-        <div class="container">
+        <div class="header">
             <h1>🚀 RADIO EXPLORER 🚀</h1>
-            <p class="subtitle">Navigate the cosmos. Master the landing. Explore
-                the unknown.</p>
+            <p class="subtitle">Navigate the cosmos. Master the landing. Explore the unknown.</p>
 
             <a href="setup.exe" class="download-btn">⬇ DOWNLOAD GAME</a>
 
-            <p class="version">Current Version: 0.0.4 | Size: ~2MB |
-                Auto-updates enabled</p>
+            <p class="version">Current Version: 0.0.4 | Size: ~2MB | Auto-updates enabled</p>
+        </div>
 
+        <div class="featured-image">
+            <img src="screenshots/wide cockpit.jpeg" alt="Radio Explorer In-Game Cockpit View">
+            <p class="featured-label">◆ In-Game Cockpit Interface ◆</p>
+        </div>
+
+        <div class="container">
             <div class="features">
                 <h2>✨ Features</h2>
                 <ul>
